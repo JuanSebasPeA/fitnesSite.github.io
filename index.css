@@ -257,3 +257,8 @@ a:visited {
 .linkdos {
   font-size: 20px;
 }
+
+.videos {
+  text-align: center;
+  background-color: white;
+}
