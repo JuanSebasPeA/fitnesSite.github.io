@@ -1,0 +1,291 @@
+
+/*GRID*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='24' viewBox='0 0 88 24'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='autumn' fill='%2392ac92' fill-opacity='0.2'%3E%3Cpath d='M10 0l30 15 2 1V2.18A10 10 0 0 0 41.76 0H39.7a8 8 0 0 1 .3 2.18v10.58L14.47 0H10zm31.76 24a10 10 0 0 0-5.29-6.76L4 1 2 0v13.82a10 10 0 0 0 5.53 8.94L10 24h4.47l-6.05-3.02A8 8 0 0 1 4 13.82V3.24l31.58 15.78A8 8 0 0 1 39.7 24h2.06zM78 24l2.47-1.24A10 10 0 0 0 86 13.82V0l-2 1-32.47 16.24A10 10 0 0 0 46.24 24h2.06a8 8 0 0 1 4.12-4.98L84 3.24v10.58a8 8 0 0 1-4.42 7.16L73.53 24H78zm0-24L48 15l-2 1V2.18A10 10 0 0 1 46.24 0h2.06a8 8 0 0 0-.3 2.18v10.58L73.53 0H78z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+}
+
+.container .header {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  padding: 20px;
+  margin-bottom: 50px;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.container .header h1 {
+  color: #145313;
+  padding-bottom: 30px;
+  font-size: 45px;
+  font-family: monospace;
+  text-shadow: 5px 5px 10px #145313;
+}
+
+.container .main article {
+    margin: auto;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #000;
+  }
+
+.container .main article:nth-last-child(1) {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.container .main article .apartado {
+  background: #454A4F;
+  color: #ffffff;
+  opacity: 0.7;
+  border: 1px solid #6a799b;
+  border-radius: 5px;
+  width: 90%;
+  max-height: 252px;
+  margin: auto;
+  padding: 20px 20px;
+  overflow: auto;
+  margin-bottom: 30px;
+}
+
+.container .main  article .apartado::-webkit-scrollbar {
+  width: 9px;
+}
+
+.container .main  article .apartado::-webkit-scrollbar-thumb {
+  background: #ff9d00;
+  border-radius: 5px;
+}
+
+.container .main p, .container .main article li, .container p {
+    font-family: calibri;
+    font-size: 27px;
+    line-height: 40px;
+}
+
+.container .main article ul li {
+  margin-left: 30px;
+}
+
+.container .main article h2, .container h2 {
+   color: #454A4F;
+   -webkit-text-stroke: 2px rgb(141, 139, 139);
+   font-family: helvetica;
+   margin: auto;
+   font-size: 30px;
+   text-align: center;
+   margin-bottom: 70px;
+ }
+
+.container .main article h3, .container h3 {
+   font-size: 25px;
+   font-family: helvetica;
+ }
+
+.container .header .navegation {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.container .header .navegation a {
+  background: #187e16;
+  font-size: 25px;
+  text-align: center;
+  font-family: arial, serif;
+  font-weight: bold;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  flex-grow:1;
+}
+
+.header .navegation a:hover {
+  background: #2ca44b;
+ /* background: #ffffff;
+  color: #145313;
+  border: 1px solid #145313; */
+} 
+
+.container .footer {
+  background: #12203E;
+  border-radius: 9px;
+  border: 4px solid #ff9d00;
+  color: #ffffff;
+  min-height: 70px;
+}
+
+.container .main article .apartado h4 {
+  text-align: center;
+  width: 30%;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin: auto;
+  font-size: 25px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #b3d3b2;
+}
+
+.container .main article i, .container .header i {
+  color: #000;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-left: 90%;
+}
+
+.container .main article p a, .container .main article p a:visited, .container p a, .container p a:visited {
+  text-decoration: none;
+  color: #ffffff;
+  -webkit-text-stroke: 2px rgb(41, 12, 114);
+  border-bottom: 2px solid #12203E;
+}
+
+.container .main article p a:hover, .container p a:hover {
+  opacity: 0.6;
+  /*
+  text-decoration: none;
+  color: #12203E;
+  -webkit-text-stroke: 1px rgb(225, 218, 239);
+  border-bottom: 2px solid #93a1be;
+*/}
+
+.container .footer h2 {
+  text-align: center;
+  padding: 20px;
+  -webkit-text-stroke: 1px #fdf2c8;
+  color: #ff9d00;
+}
+
+.container .footer .icons {
+  margin: auto;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.container .footer .icons i {
+  font-size: 60px;
+}
+
+.container .footer #facebook-log {
+  background-color: #12203E;
+  color: #ffffff;
+}
+
+.container .footer #instagram-log {
+  color:#a468a3;
+}
+
+.container .videos {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.container iframe {
+  width: 80%;
+  height: 400px;
+}
+
+/*APLICACIÓN DE MEDIAS*/
+@media screen and (max-width: 1250px){
+  .container .header {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .container .header h1, .container .header .navegation {
+    width: 100%;
+    text-align: center;
+  }
+
+  .container .header h1 {
+    font-size: 40px;
+  }
+  .container .header .navegation a {
+    font-size: 20px;
+  }
+  .container .main article p, .container .main article ul li {
+    font-size: 22px;
+  }
+  .container .main article h3 {
+    font-size: 20px;
+  }
+  .container .main article h2 {
+    font-size: 25px;
+    margin-bottom: 45px;
+  }
+  .container .main article .apartado {
+    width: 92%;
+  }
+  .container .main article .apartado h4 {
+    font-size: 22px;
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 800px){
+	.container .header {
+		flex-direction:colum;
+		padding: 0;
+	}
+	.container .header h1 {
+    text-align: center;
+		margin: 20px auto;
+		width: 100%;
+	}
+	.container .header .navegation {
+		width: 100%;
+    flex-direction: column;
+    gap: 10px;
+	}
+  .container .header .navegation a {
+    width: 200px;
+  }
+  .container .videos {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  
+  .container .main article p, .container .main article ul li {
+    font-size: 20px;
+  }
+
+  .container .main article h3 {
+    font-size: 17px;
+  }
+
+  .container .main article .apartado {
+    width: 95%;
+  }
+  .container .videos {
+    width: 100%;
+  }
+  .container iframe {
+    width: 90%;
+    height: 200px;
+  }
+}
